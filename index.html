@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>z6type | Slide Cafe App Landing Page</title>
+    <title>z6type | Slide Cafe</title>
     <meta
       name="description"
       content="z6type tarafından yayımlanan Slide Cafe için profesyonel, minimalist ve responsive app landing page."
@@ -17,10 +17,9 @@
             colors: {
               ink: "#18212f",
               latte: "#f8f4ec",
-              cloud: "#fffdf8",
-              line: "#e7dfd4",
               caramel: "#c88a58",
               cacao: "#7a5b44",
+              line: "#e7dfd4",
             },
             boxShadow: {
               soft: "0 12px 36px rgba(24, 33, 47, 0.08)",
@@ -44,7 +43,7 @@
           "Segoe UI", sans-serif;
         background:
           radial-gradient(circle at top left, rgba(200, 138, 88, 0.18), transparent 32%),
-          radial-gradient(circle at top right, rgba(255, 255, 255, 0.9), transparent 28%),
+          radial-gradient(circle at top right, rgba(255, 255, 255, 0.88), transparent 30%),
           linear-gradient(180deg, #fffcf7 0%, #f8f4ec 42%, #f4efe7 100%);
       }
 
@@ -53,16 +52,12 @@
         backdrop-filter: blur(18px);
       }
 
-      .grid-highlight {
-        background-image:
-          linear-gradient(rgba(231, 223, 212, 0.45) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(231, 223, 212, 0.45) 1px, transparent 1px);
-        background-size: 34px 34px;
+      .carousel-track {
+        scrollbar-width: none;
       }
 
-      .legal-copy p,
-      .legal-copy li {
-        color: #445065;
+      .carousel-track::-webkit-scrollbar {
+        display: none;
       }
     </style>
   </head>
@@ -140,12 +135,12 @@
               >Destek</a
             >
             <a
-              href="#privacy-policy"
+              href="privacy.html#privacy-policy"
               class="rounded-full px-4 py-2 transition duration-300 hover:bg-white hover:text-ink"
               >Privacy Policy</a
             >
             <a
-              href="#terms-of-service"
+              href="privacy.html#terms-of-service"
               class="rounded-full px-4 py-2 transition duration-300 hover:bg-white hover:text-ink"
               >Terms</a
             >
@@ -227,18 +222,6 @@
                     <span class="block text-base font-semibold tracking-tight">Google Play</span>
                   </span>
                 </a>
-              </div>
-
-              <div class="mt-8 flex flex-wrap gap-3 text-sm text-slate-500">
-                <span class="rounded-full border border-white/80 bg-white/80 px-4 py-2 shadow-sm"
-                  >Minimum veri toplama yaklaşımı</span
-                >
-                <span class="rounded-full border border-white/80 bg-white/80 px-4 py-2 shadow-sm"
-                  >Reklam ve destek metinleri dahil</span
-                >
-                <span class="rounded-full border border-white/80 bg-white/80 px-4 py-2 shadow-sm"
-                  >Tek dosya GitHub Pages uyumlu</span
-                >
               </div>
             </div>
 
@@ -463,26 +446,44 @@
           </div>
         </section>
 
-        <section id="support" class="mx-auto max-w-6xl px-5 py-10 sm:px-6 lg:px-8 lg:py-16">
+        <section id="support" class="mx-auto max-w-4xl px-5 py-10 sm:px-6 lg:px-8 lg:py-16">
           <div
-            class="grid gap-6 overflow-hidden rounded-[2.5rem] border border-white/80 bg-white/70 p-6 shadow-soft sm:p-8 lg:grid-cols-[1.1fr_minmax(0,0.9fr)]"
+            class="rounded-[2.5rem] border border-white/80 bg-white/75 px-6 py-10 text-center shadow-soft sm:px-8"
           >
-            <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">Support</p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              Destek için tek tık yeterli
+            </h2>
+            <a
+              href="mailto:support@z6type.com?subject=Slide%20Cafe%20Destek"
+              class="mt-6 inline-flex items-center justify-center rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
+              support@z6type.com
+            </a>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-6xl px-5 pb-12 sm:px-6 lg:px-8 lg:pb-20">
+          <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div class="max-w-2xl">
               <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
-                Support &amp; Contact
+                In-Game Screens
               </p>
               <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Destek talepleri için hızlı ve doğrudan iletişim
+                Oyun içi görseller için hazır carousel alanı
               </h2>
-              <p class="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-                Teknik sorunlar, hesap/veri silme talepleri, reklam geri bildirimleri veya
-                app review süreçlerinde gerekli iletişim için aşağıdaki destek adresi
-                kullanılabilir. Genellikle 3 iş günü içinde geri dönüş sağlanır.
+              <p class="mt-4 text-base leading-7 text-slate-600">
+                Aşağıdaki kartlara ekran görüntülerinizi ekleyebilirsiniz. Yapı yatay kaydırma,
+                snap ve butonlu gezinme ile hazırdır.
               </p>
+            </div>
 
-              <a
-                href="mailto:support@z6type.com?subject=Slide%20Cafe%20Destek"
-                class="mt-6 inline-flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-950 px-5 py-3 text-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+            <div class="hidden items-center gap-3 md:flex">
+              <button
+                type="button"
+                data-carousel-prev
+                class="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
+                aria-label="Önceki görsel"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -492,307 +493,105 @@
                   aria-hidden="true"
                 >
                   <path
-                    d="M4 7L12 13L20 7"
+                    d="M15 18L9 12L15 6"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
-                  <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="2" />
                 </svg>
-                support@z6type.com
-              </a>
-            </div>
-
-            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              <div class="rounded-[1.75rem] border border-line bg-latte p-5">
-                <p class="text-sm font-semibold text-ink">Destek kapsamı</p>
-                <p class="mt-2 text-sm leading-6 text-slate-600">
-                  Oyun içi hatalar, satın alma, skor tablosu sorunları ve reklam gösterimi
-                  ile ilgili destek.
-                </p>
-              </div>
-              <div class="rounded-[1.75rem] border border-line bg-latte p-5">
-                <p class="text-sm font-semibold text-ink">Gizlilik talepleri</p>
-                <p class="mt-2 text-sm leading-6 text-slate-600">
-                  Veri erişimi, düzeltme, silme ve itiraz başvuruları aynı e-posta adresi
-                  üzerinden alınabilir.
-                </p>
-              </div>
-              <div class="rounded-[1.75rem] border border-line bg-latte p-5">
-                <p class="text-sm font-semibold text-ink">Yayın platformları</p>
-                <p class="mt-2 text-sm leading-6 text-slate-600">
-                  Bu sayfa, App Store Connect ve Google Play Console için gizlilik/iletişim
-                  bağlantısı olarak kullanılabilecek şekilde tasarlanmıştır.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="legal" class="mx-auto max-w-6xl px-5 pb-12 sm:px-6 lg:px-8 lg:pb-20">
-          <div class="mb-8 max-w-3xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">Legal</p>
-            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Privacy Policy ve Terms of Service
-            </h2>
-            <p class="mt-4 text-base leading-7 text-slate-600">
-              Aşağıdaki metinler Slide Cafe için kamuya açık gizlilik ve kullanım
-              koşulları taslağı olarak düzenlenmiştir. Uygulama içinde ek izin/aydınlatma
-              ekranları kullanılıyorsa bu metinlerle tutarlı olmalıdır.
-            </p>
-          </div>
-
-          <div class="grid gap-6 xl:grid-cols-2">
-            <article
-              id="privacy-policy"
-              class="legal-copy grid-highlight overflow-hidden rounded-[2.5rem] border border-white/80 bg-white/85 p-6 shadow-soft sm:p-8"
-            >
-              <div class="flex items-start justify-between gap-4">
-                <div>
-                  <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
-                    Privacy Policy
-                  </p>
-                  <h3 class="mt-2 text-2xl font-semibold tracking-tight text-ink">
-                    Gizlilik Politikası
-                  </h3>
-                </div>
-                <span class="rounded-full bg-latte px-3 py-1 text-xs font-medium text-slate-500"
-                  >Son güncelleme: 14 Mart 2026</span
+              </button>
+              <button
+                type="button"
+                data-carousel-next
+                class="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
+                aria-label="Sonraki görsel"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  class="h-5 w-5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
-              </div>
+                  <path
+                    d="M9 18L15 12L9 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
 
-              <div class="mt-6 space-y-5 text-sm leading-7 sm:text-[15px]">
-                <p>
-                  Bu Gizlilik Politikası, z6type tarafından yayımlanan Slide Cafe mobil
-                  oyununun hangi verileri işlediğini, bunları nasıl kullandığını ve
-                  kullanıcıların hangi haklara sahip olduğunu açıklar.
-                </p>
-
-                <div>
-                  <h4 class="font-semibold text-ink">1. Toplanan veriler</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Uygulama, hizmeti çalıştırmak ve iyileştirmek için minimum düzeyde veri
-                      toplama yaklaşımı benimser.
-                    </li>
-                    <li>
-                      Cihaz türü, işletim sistemi sürümü, temel hata kayıtları, performans
-                      metrikleri ve oyun içi skor/ilerleme bilgileri işlenebilir.
-                    </li>
-                    <li>
-                      Skor tablosu veya destek talebi gibi özelliklerde, kullanıcı tarafından
-                      sağlanan takma ad veya e-posta adresi kaydedilebilir.
-                    </li>
-                    <li>
-                      Slide Cafe hassas kişisel veri toplamayı hedeflemez; böyle bir işleme
-                      yalnızca gerekli olduğunda ve uygulanabilir mevzuat kapsamında izin
-                      alınması halinde başvurulur.
-                    </li>
-                  </ul>
+          <div
+            data-carousel-track
+            class="carousel-track flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-4"
+          >
+            <article class="shrink-0 basis-[88%] snap-center sm:basis-[68%] lg:basis-[46%]">
+              <div class="overflow-hidden rounded-[2rem] border border-white/80 bg-white/80 shadow-soft">
+                <div
+                  class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-[#f6e9dc] via-white to-[#efe1d1]"
+                >
+                  <div class="text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
+                      Screenshot 01
+                    </p>
+                    <p class="mt-3 text-lg font-semibold text-ink">Ana oyun ekranı</p>
+                    <p class="mt-2 text-sm text-slate-500">Bu alana görsel ekleyin</p>
+                  </div>
                 </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">2. Verilerin kullanım amacı</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>Oyunun çalışması, hata ayıklama ve performans takibi.</li>
-                    <li>Skor tablosu, günlük meydan okuma ve oyuncu deneyimini geliştirme.</li>
-                    <li>Destek taleplerine cevap verebilme ve güvenlik suistimallerini önleme.</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">3. Üçüncü taraf hizmetler ve reklam</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Uygulama, reklam gösterimi veya ölçümleme için Google AdMob gibi üçüncü
-                      taraf reklam ağları ve SDK'larından yararlanabilir.
-                    </li>
-                    <li>
-                      Bu hizmetler cihaz tanımlayıcıları, reklam kimlikleri, yaklaşık konum
-                      veya kullanım verileri gibi bilgileri kendi politikalarına uygun şekilde
-                      işleyebilir.
-                    </li>
-                    <li>
-                      Yasal olarak gerekli olan durumlarda, kişiselleştirilmiş reklamlar veya
-                      benzer veri işleme faaliyetleri için uygulama içinde açık rıza ya da izin
-                      mekanizması sunulur.
-                    </li>
-                    <li>
-                      z6type, veri paylaşılan tüm iş ortaklarının bu politikada açıklanan veri
-                      koruma düzeyine eşit veya benzer standartları uygulamasını bekler.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">4. Saklama, güvenlik ve silme</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Veriler yalnızca gerekli olduğu süre boyunca tutulur; hukuki
-                      yükümlülükler, dolandırıcılık önleme ve destek süreçleri bu süreyi
-                      etkileyebilir.
-                    </li>
-                    <li>
-                      Makul teknik ve organizasyonel güvenlik önlemleri, şifreli iletim ve
-                      yetki sınırlandırmaları uygulanır.
-                    </li>
-                    <li>
-                      Kullanıcı yerel verileri cihazından uygulamayı kaldırarak silebilir;
-                      sunucu veya destek kayıtlarına ilişkin silme talepleri e-posta ile
-                      iletilebilir.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">5. Kullanıcı hakları</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Kullanıcı; erişim, düzeltme, silme, veri işlemeye itiraz etme ve gerekli
-                      durumlarda verdiği izni geri çekme haklarına sahiptir.
-                    </li>
-                    <li>
-                      Bu hakların kullanımı için
-                      <a class="font-medium text-ink underline decoration-caramel/70" href="mailto:support@z6type.com"
-                        >support@z6type.com</a
-                      >
-                      adresi üzerinden başvuru yapılabilir.
-                    </li>
-                    <li>
-                      Talebin niteliğine göre ek kimlik doğrulaması veya yasal saklama
-                      zorunlulukları uygulanabilir.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">6. Çocuklar ve değişiklikler</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Uygulama genel kitleye yöneliktir; çocuklara özel veri toplama
-                      amaçlanmamaktadır.
-                    </li>
-                    <li>
-                      Bu politika güncellendiğinde yeni sürüm bu sayfada yayımlanır ve gerekli
-                      ise uygulama içinde ek bildirim sunulur.
-                    </li>
-                  </ul>
+                <div class="px-5 py-4">
+                  <p class="text-sm font-medium text-ink">Akış ve temel gameplay görünümü</p>
+                  <p class="mt-1 text-sm text-slate-500">
+                    Bu kartı doğrudan bir `&lt;img&gt;` etiketi ile değiştirebilirsiniz.
+                  </p>
                 </div>
               </div>
             </article>
 
-            <article
-              id="terms-of-service"
-              class="legal-copy overflow-hidden rounded-[2.5rem] border border-white/80 bg-[#fffaf3] p-6 shadow-soft sm:p-8"
-            >
-              <div class="flex items-start justify-between gap-4">
-                <div>
-                  <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
-                    Terms of Service
-                  </p>
-                  <h3 class="mt-2 text-2xl font-semibold tracking-tight text-ink">
-                    Kullanım Koşulları
-                  </h3>
-                </div>
-                <span class="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-500"
-                  >Slide Cafe</span
+            <article class="shrink-0 basis-[88%] snap-center sm:basis-[68%] lg:basis-[46%]">
+              <div class="overflow-hidden rounded-[2rem] border border-white/80 bg-white/80 shadow-soft">
+                <div
+                  class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-[#eef3ff] via-white to-[#dfe9ff]"
                 >
+                  <div class="text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-sky-600">
+                      Screenshot 02
+                    </p>
+                    <p class="mt-3 text-lg font-semibold text-ink">Skor tablosu</p>
+                    <p class="mt-2 text-sm text-slate-500">Bu alana görsel ekleyin</p>
+                  </div>
+                </div>
+                <div class="px-5 py-4">
+                  <p class="text-sm font-medium text-ink">Lig, seri ve günlük sonuçlar</p>
+                  <p class="mt-1 text-sm text-slate-500">
+                    Geniş ekranlarda iki kart, mobilde yatay kaydırma ile görünür.
+                  </p>
+                </div>
               </div>
+            </article>
 
-              <div class="mt-6 space-y-5 text-sm leading-7 sm:text-[15px]">
-                <p>
-                  Slide Cafe'yi indirerek, erişerek veya kullanarak bu Kullanım Koşulları'nı
-                  kabul etmiş olursunuz. Koşulları kabul etmiyorsanız uygulamayı kullanmayınız.
-                </p>
-
-                <div>
-                  <h4 class="font-semibold text-ink">1. Lisans ve kullanım</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      z6type, Slide Cafe'yi kişisel ve ticari olmayan kullanım amacıyla,
-                      sınırlı, geri alınabilir ve devredilemez bir lisansla sunar.
-                    </li>
-                    <li>
-                      Uygulamanın kaynaklarını kopyalama, tersine mühendislik, yetkisiz
-                      dağıtım veya marka unsurlarını izinsiz kullanma yasaktır.
-                    </li>
-                  </ul>
+            <article class="shrink-0 basis-[88%] snap-center sm:basis-[68%] lg:basis-[46%]">
+              <div class="overflow-hidden rounded-[2rem] border border-white/80 bg-white/80 shadow-soft">
+                <div
+                  class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-[#ecf8ee] via-white to-[#dff0e2]"
+                >
+                  <div class="text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-600">
+                      Screenshot 03
+                    </p>
+                    <p class="mt-3 text-lg font-semibold text-ink">Günlük challenge</p>
+                    <p class="mt-2 text-sm text-slate-500">Bu alana görsel ekleyin</p>
+                  </div>
                 </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">2. Oyuncu davranışı</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Hile, otomasyon, skor tablosu manipülasyonu, hizmete zarar verme veya
-                      diğer kullanıcıları rahatsız eden davranışlar kabul edilmez.
-                    </li>
-                    <li>
-                      Bu tür ihlaller tespit edilirse ilgili skorlar kaldırılabilir ve hizmete
-                      erişim sınırlandırılabilir.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">3. Üçüncü taraf platformlar</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Uygulama, Apple App Store, Google Play veya Google AdMob gibi üçüncü
-                      taraf platformlar ile birlikte çalışabilir.
-                    </li>
-                    <li>
-                      Uygulama içi satın alma, reklam veya ödül mekanikleri varsa bunlar ilgili
-                      platform koşullarına ve teknik uygunluk kurallarına tabi olabilir.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">4. Fikri mülkiyet</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Slide Cafe adı, tasarımı, metinleri, görselleri, sesleri ve oyun
-                      mekanikleri dahil olmak üzere uygulamadaki tüm içerik z6type'a veya ilgili
-                      hak sahiplerine aittir.
-                    </li>
-                    <li>
-                      Önceden yazılı izin alınmadan bu içerikler ticari olarak kullanılamaz.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">5. Sorumluluğun sınırlandırılması</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Uygulama mevcut haliyle sunulur. Mevzuatın izin verdiği en geniş ölçüde,
-                      kesintisiz hizmet, hatasızlık veya belirli bir amaca uygunluk konusunda
-                      açık ya da zımni garanti verilmez.
-                    </li>
-                    <li>
-                      z6type, dolaylı zararlar, veri kaybı, gelir kaybı veya hizmet kesintisi
-                      kaynaklı taleplerden; zorunlu hukuki sorumluluk halleri saklı kalmak
-                      kaydıyla sorumlu tutulamaz.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 class="font-semibold text-ink">6. Değişiklikler ve iletişim</h4>
-                  <ul class="mt-2 list-disc space-y-2 pl-5">
-                    <li>
-                      Bu koşullar zaman zaman güncellenebilir. Güncel metin bu sayfada
-                      yayımlandığı anda yürürlüğe girer.
-                    </li>
-                    <li>
-                      Sorularınız için
-                      <a class="font-medium text-ink underline decoration-caramel/70" href="mailto:support@z6type.com"
-                        >support@z6type.com</a
-                      >
-                      adresi kullanılabilir.
-                    </li>
-                  </ul>
+                <div class="px-5 py-4">
+                  <p class="text-sm font-medium text-ink">Özel etkinlik veya görev görünümü</p>
+                  <p class="mt-1 text-sm text-slate-500">
+                    Renk blokları yer tutucu; gerçek ekran görüntüsü ile değiştirin.
+                  </p>
                 </div>
               </div>
             </article>
@@ -802,7 +601,7 @@
 
       <footer class="border-t border-white/60 bg-white/70 backdrop-blur-xl">
         <div
-          class="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-6 text-sm text-slate-500 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8"
+          class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-6 text-sm text-slate-500 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8"
         >
           <div>
             <p class="font-medium text-ink">© 2026 z6type. Tüm hakları saklıdır.</p>
@@ -811,60 +610,38 @@
             </p>
           </div>
 
-          <div class="flex items-center gap-3">
+          <div class="flex flex-wrap items-center gap-3">
             <a
-              href="#"
-              class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
-              aria-label="Instagram"
-              title="Instagram bağlantısını güncelleyin"
+              href="privacy.html#privacy-policy"
+              class="rounded-full border border-slate-200 bg-white px-4 py-2 text-slate-600 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
+              >Privacy Policy</a
             >
-              <svg
-                viewBox="0 0 24 24"
-                class="h-5 w-5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="2" />
-                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
-                <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" />
-              </svg>
-            </a>
             <a
-              href="#"
-              class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
-              aria-label="X"
-              title="X bağlantısını güncelleyin"
+              href="privacy.html#terms-of-service"
+              class="rounded-full border border-slate-200 bg-white px-4 py-2 text-slate-600 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
+              >Terms of Service</a
             >
-              <svg
-                viewBox="0 0 24 24"
-                class="h-5 w-5"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path d="M4 4H8.8L13.13 10.2L18.44 4H20.71L14.12 11.68L21 20H16.2L11.48 13.31L5.76 20H3.48L10.48 11.82L4 4Z" />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
-              aria-label="TikTok"
-              title="TikTok bağlantısını güncelleyin"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                class="h-5 w-5"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path d="M14.8 3C15.4 5.05 16.65 6.34 18.7 6.82V10C17.12 9.94 15.8 9.4 14.8 8.39V14.16C14.8 17.87 12.63 20 9.4 20C6.3 20 4 17.64 4 14.63C4 11.48 6.42 9.2 9.6 9.2C10 9.2 10.33 9.23 10.8 9.34V12.52C10.47 12.36 10.11 12.28 9.7 12.28C8.18 12.28 7.14 13.28 7.14 14.68C7.14 16.16 8.15 17.12 9.62 17.12C11.12 17.12 12.02 16.12 12.02 14.48V3H14.8Z" />
-              </svg>
-            </a>
           </div>
         </div>
       </footer>
     </div>
+
+    <script>
+      const track = document.querySelector("[data-carousel-track]");
+      const prevButton = document.querySelector("[data-carousel-prev]");
+      const nextButton = document.querySelector("[data-carousel-next]");
+
+      if (track && prevButton && nextButton) {
+        const scrollAmount = () => Math.min(track.clientWidth * 0.9, 560);
+
+        prevButton.addEventListener("click", () => {
+          track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+        });
+
+        nextButton.addEventListener("click", () => {
+          track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+        });
+      }
+    </script>
   </body>
 </html>
