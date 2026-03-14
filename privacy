@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z6type | Privacy Policy &amp; Terms</title>
+    <meta
+      name="description"
+      content="Slide Cafe için Privacy Policy ve Terms of Service sayfası."
+    />
+    <meta name="theme-color" content="#f8f4ec" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#18212f",
+              latte: "#f8f4ec",
+              caramel: "#c88a58",
+              cacao: "#7a5b44",
+            },
+            boxShadow: {
+              soft: "0 12px 36px rgba(24, 33, 47, 0.08)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Display",
+          "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(200, 138, 88, 0.18), transparent 32%),
+          linear-gradient(180deg, #fffcf7 0%, #f8f4ec 45%, #f4efe7 100%);
+      }
+
+      .legal-copy p,
+      .legal-copy li {
+        color: #445065;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen text-ink antialiased">
+    <div class="relative z-10">
+      <header class="sticky top-0 z-30 border-b border-white/60 bg-white/70 backdrop-blur-xl">
+        <div
+          class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8"
+        >
+          <a href="index.html" class="inline-flex items-center gap-3 self-start">
+            <span
+              class="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/80 bg-white shadow-sm"
+            >
+              <svg
+                viewBox="0 0 64 64"
+                class="h-7 w-7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect x="8" y="10" width="48" height="44" rx="14" fill="#F8F4EC" />
+                <path
+                  d="M22 22H34C39.523 22 44 26.477 44 32C44 37.523 39.523 42 34 42H22V22Z"
+                  fill="#C88A58"
+                />
+                <path
+                  d="M43 25H46C49.314 25 52 27.686 52 31C52 34.314 49.314 37 46 37H43"
+                  stroke="#7A5B44"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M20 46H46"
+                  stroke="#18212F"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span>
+              <span class="block text-sm font-semibold tracking-tight">z6type</span>
+              <span class="block text-xs text-slate-500">Slide Cafe legal page</span>
+            </span>
+          </a>
+
+          <nav
+            class="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-600 lg:justify-end"
+            aria-label="Yasal menü"
+          >
+            <a
+              href="index.html"
+              class="rounded-full px-4 py-2 transition duration-300 hover:bg-white hover:text-ink"
+              >Ana sayfa</a
+            >
+            <a
+              href="#privacy-policy"
+              class="rounded-full px-4 py-2 transition duration-300 hover:bg-white hover:text-ink"
+              >Privacy Policy</a
+            >
+            <a
+              href="#terms-of-service"
+              class="rounded-full px-4 py-2 transition duration-300 hover:bg-white hover:text-ink"
+              >Terms</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main class="mx-auto max-w-6xl px-5 pb-16 pt-10 sm:px-6 lg:px-8 lg:pb-24 lg:pt-16">
+        <section class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">Legal</p>
+          <h1 class="mt-3 text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+            Privacy Policy &amp; Terms of Service
+          </h1>
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            Bu sayfa, z6type tarafından yayımlanan Slide Cafe için gizlilik politikası ve
+            kullanım koşullarını içerir.
+          </p>
+        </section>
+
+        <section class="mt-10 grid gap-6 xl:grid-cols-2">
+          <article
+            id="privacy-policy"
+            class="legal-copy rounded-[2.5rem] border border-white/80 bg-white/85 p-6 shadow-soft sm:p-8"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
+                  Privacy Policy
+                </p>
+                <h2 class="mt-2 text-2xl font-semibold tracking-tight text-ink">
+                  Gizlilik Politikası
+                </h2>
+              </div>
+              <span class="rounded-full bg-latte px-3 py-1 text-xs font-medium text-slate-500"
+                >Son güncelleme: 14 Mart 2026</span
+              >
+            </div>
+
+            <div class="mt-6 space-y-5 text-sm leading-7 sm:text-[15px]">
+              <p>
+                Bu Gizlilik Politikası, z6type tarafından yayımlanan Slide Cafe mobil
+                oyununun hangi verileri işlediğini, bunları nasıl kullandığını ve
+                kullanıcıların hangi haklara sahip olduğunu açıklar.
+              </p>
+
+              <div>
+                <h3 class="font-semibold text-ink">1. Toplanan veriler</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Uygulama, hizmeti çalıştırmak ve iyileştirmek için minimum düzeyde veri
+                    toplama yaklaşımı benimser.
+                  </li>
+                  <li>
+                    Cihaz türü, işletim sistemi sürümü, temel hata kayıtları, performans
+                    metrikleri ve oyun içi skor/ilerleme bilgileri işlenebilir.
+                  </li>
+                  <li>
+                    Skor tablosu veya destek talebi gibi özelliklerde, kullanıcı tarafından
+                    sağlanan takma ad veya e-posta adresi kaydedilebilir.
+                  </li>
+                  <li>
+                    Slide Cafe hassas kişisel veri toplamayı hedeflemez; böyle bir işleme
+                    yalnızca gerekli olduğunda ve uygulanabilir mevzuat kapsamında izin
+                    alınması halinde başvurulur.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">2. Verilerin kullanım amacı</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>Oyunun çalışması, hata ayıklama ve performans takibi.</li>
+                  <li>Skor tablosu, günlük meydan okuma ve oyuncu deneyimini geliştirme.</li>
+                  <li>Destek taleplerine cevap verebilme ve güvenlik suistimallerini önleme.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">3. Üçüncü taraf hizmetler ve reklam</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Uygulama, reklam gösterimi veya ölçümleme için Google AdMob gibi üçüncü
+                    taraf reklam ağları ve SDK'larından yararlanabilir.
+                  </li>
+                  <li>
+                    Bu hizmetler cihaz tanımlayıcıları, reklam kimlikleri, yaklaşık konum
+                    veya kullanım verileri gibi bilgileri kendi politikalarına uygun şekilde
+                    işleyebilir.
+                  </li>
+                  <li>
+                    Yasal olarak gerekli olan durumlarda, kişiselleştirilmiş reklamlar veya
+                    benzer veri işleme faaliyetleri için uygulama içinde açık rıza ya da izin
+                    mekanizması sunulur.
+                  </li>
+                  <li>
+                    z6type, veri paylaşılan tüm iş ortaklarının bu politikada açıklanan veri
+                    koruma düzeyine eşit veya benzer standartları uygulamasını bekler.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">4. Saklama, güvenlik ve silme</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Veriler yalnızca gerekli olduğu süre boyunca tutulur; hukuki
+                    yükümlülükler, dolandırıcılık önleme ve destek süreçleri bu süreyi
+                    etkileyebilir.
+                  </li>
+                  <li>
+                    Makul teknik ve organizasyonel güvenlik önlemleri, şifreli iletim ve
+                    yetki sınırlandırmaları uygulanır.
+                  </li>
+                  <li>
+                    Kullanıcı yerel verileri cihazından uygulamayı kaldırarak silebilir;
+                    sunucu veya destek kayıtlarına ilişkin silme talepleri e-posta ile
+                    iletilebilir.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">5. Kullanıcı hakları</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Kullanıcı; erişim, düzeltme, silme, veri işlemeye itiraz etme ve gerekli
+                    durumlarda verdiği izni geri çekme haklarına sahiptir.
+                  </li>
+                  <li>
+                    Bu hakların kullanımı için
+                    <a class="font-medium text-ink underline decoration-caramel/70" href="mailto:support@z6type.com"
+                      >support@z6type.com</a
+                    >
+                    adresi üzerinden başvuru yapılabilir.
+                  </li>
+                  <li>
+                    Talebin niteliğine göre ek kimlik doğrulaması veya yasal saklama
+                    zorunlulukları uygulanabilir.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">6. Çocuklar ve değişiklikler</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Uygulama genel kitleye yöneliktir; çocuklara özel veri toplama
+                    amaçlanmamaktadır.
+                  </li>
+                  <li>
+                    Bu politika güncellendiğinde yeni sürüm bu sayfada yayımlanır ve gerekli
+                    ise uygulama içinde ek bildirim sunulur.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article
+            id="terms-of-service"
+            class="legal-copy rounded-[2.5rem] border border-white/80 bg-[#fffaf3] p-6 shadow-soft sm:p-8"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
+                  Terms of Service
+                </p>
+                <h2 class="mt-2 text-2xl font-semibold tracking-tight text-ink">
+                  Kullanım Koşulları
+                </h2>
+              </div>
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-500"
+                >Slide Cafe</span
+              >
+            </div>
+
+            <div class="mt-6 space-y-5 text-sm leading-7 sm:text-[15px]">
+              <p>
+                Slide Cafe'yi indirerek, erişerek veya kullanarak bu Kullanım Koşulları'nı
+                kabul etmiş olursunuz. Koşulları kabul etmiyorsanız uygulamayı kullanmayınız.
+              </p>
+
+              <div>
+                <h3 class="font-semibold text-ink">1. Lisans ve kullanım</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    z6type, Slide Cafe'yi kişisel ve ticari olmayan kullanım amacıyla,
+                    sınırlı, geri alınabilir ve devredilemez bir lisansla sunar.
+                  </li>
+                  <li>
+                    Uygulamanın kaynaklarını kopyalama, tersine mühendislik, yetkisiz
+                    dağıtım veya marka unsurlarını izinsiz kullanma yasaktır.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">2. Oyuncu davranışı</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Hile, otomasyon, skor tablosu manipülasyonu, hizmete zarar verme veya
+                    diğer kullanıcıları rahatsız eden davranışlar kabul edilmez.
+                  </li>
+                  <li>
+                    Bu tür ihlaller tespit edilirse ilgili skorlar kaldırılabilir ve hizmete
+                    erişim sınırlandırılabilir.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">3. Üçüncü taraf platformlar</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Uygulama, Apple App Store, Google Play veya Google AdMob gibi üçüncü
+                    taraf platformlar ile birlikte çalışabilir.
+                  </li>
+                  <li>
+                    Uygulama içi satın alma, reklam veya ödül mekanikleri varsa bunlar ilgili
+                    platform koşullarına ve teknik uygunluk kurallarına tabi olabilir.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">4. Fikri mülkiyet</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Slide Cafe adı, tasarımı, metinleri, görselleri, sesleri ve oyun
+                    mekanikleri dahil olmak üzere uygulamadaki tüm içerik z6type'a veya ilgili
+                    hak sahiplerine aittir.
+                  </li>
+                  <li>
+                    Önceden yazılı izin alınmadan bu içerikler ticari olarak kullanılamaz.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">5. Sorumluluğun sınırlandırılması</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Uygulama mevcut haliyle sunulur. Mevzuatın izin verdiği en geniş ölçüde,
+                    kesintisiz hizmet, hatasızlık veya belirli bir amaca uygunluk konusunda
+                    açık ya da zımni garanti verilmez.
+                  </li>
+                  <li>
+                    z6type, dolaylı zararlar, veri kaybı, gelir kaybı veya hizmet kesintisi
+                    kaynaklı taleplerden; zorunlu hukuki sorumluluk halleri saklı kalmak
+                    kaydıyla sorumlu tutulamaz.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-ink">6. Değişiklikler ve iletişim</h3>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Bu koşullar zaman zaman güncellenebilir. Güncel metin bu sayfada
+                    yayımlandığı anda yürürlüğe girer.
+                  </li>
+                  <li>
+                    Sorularınız için
+                    <a class="font-medium text-ink underline decoration-caramel/70" href="mailto:support@z6type.com"
+                      >support@z6type.com</a
+                    >
+                    adresi kullanılabilir.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
