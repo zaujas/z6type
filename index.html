@@ -215,105 +215,78 @@
       </section>
 
       <section class="mx-auto max-w-6xl px-5 pb-8 sm:px-6 lg:px-8 lg:pb-12">
-        <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div class="max-w-2xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
-              IN-GAME SCREENS
-            </p>
-            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              A closer look at Slide Cafe
-            </h2>
-            <p class="mt-4 text-base leading-7 text-slate-600">
-              See the smooth word-sliding gameplay, elegant interface, and puzzle modes that make every session feel fresh.
-            </p>
-          </div>
-
-          <div class="hidden items-center gap-3 md:flex">
-            <button type="button" data-carousel-prev
-              class="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
-              aria-label="Previous image">
-              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
-            <button type="button" data-carousel-next
-              class="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md"
-              aria-label="Next image">
-              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
-          </div>
+        <div class="mb-10 max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
+            IN-GAME SCREENS
+          </p>
+          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+            A closer look at Slide Cafe
+          </h2>
+          <p class="mt-4 text-base leading-7 text-slate-600">
+            See the smooth word-sliding gameplay, elegant interface, and puzzle modes that make every session feel fresh.
+          </p>
         </div>
 
-        <div data-carousel-track
-          class="carousel-track flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-4">
-          <article class="shrink-0 basis-[88%] snap-center sm:basis-[68%] lg:basis-[46%]">
-            <div class="overflow-hidden rounded-[1rem] border border-white/80 bg-white/80 shadow-soft">
+        <div class="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-8">
+          <div class="group">
+            <div
+              class="overflow-hidden rounded-[1.25rem] border border-white/80 bg-white/80 shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <div
-                class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-[#f6e9dc] via-white to-[#efe1d1]">
-                <div class="text-center">
-                  <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
-                    Screenshot 01
-                  </p>
-                  <p class="mt-3 text-lg font-semibold text-ink">Main gameplay screen</p>
-                  <p class="mt-2 text-sm text-slate-500">Replace with your image</p>
+                class="flex aspect-[9/19.5] items-center justify-center bg-gradient-to-br from-[#f6e9dc] via-white to-[#efe1d1]">
+                <div class="text-center px-3">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cacao">01</p>
+                  <p class="mt-2 text-sm font-semibold text-ink">Main Gameplay</p>
+                  <p class="mt-1 text-xs text-slate-400">Replace with screenshot</p>
                 </div>
               </div>
-              <div class="px-5 py-4">
-                <p class="text-sm font-medium text-ink">Core game flow and puzzle layout</p>
-                <p class="mt-1 text-sm text-slate-500">
-                  You can swap this card directly with an `&lt;img&gt;` element.
-                </p>
-              </div>
             </div>
-          </article>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Core game flow</p>
+          </div>
 
-          <article class="shrink-0 basis-[88%] snap-center sm:basis-[68%] lg:basis-[46%]">
-            <div class="overflow-hidden rounded-[1rem] border border-white/80 bg-white/80 shadow-soft">
+          <div class="group">
+            <div
+              class="overflow-hidden rounded-[1.25rem] border border-white/80 bg-white/80 shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <div
-                class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-[#eef3ff] via-white to-[#dfe9ff]">
-                <div class="text-center">
-                  <p class="text-sm font-semibold uppercase tracking-[0.24em] text-sky-600">
-                    Screenshot 02
-                  </p>
-                  <p class="mt-3 text-lg font-semibold text-ink">Leaderboard view</p>
-                  <p class="mt-2 text-sm text-slate-500">Replace with your image</p>
+                class="flex aspect-[9/19.5] items-center justify-center bg-gradient-to-br from-[#eef3ff] via-white to-[#dfe9ff]">
+                <div class="text-center px-3">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">02</p>
+                  <p class="mt-2 text-sm font-semibold text-ink">Leaderboard</p>
+                  <p class="mt-1 text-xs text-slate-400">Replace with screenshot</p>
                 </div>
               </div>
-              <div class="px-5 py-4">
-                <p class="text-sm font-medium text-ink">Ranks, streaks, and daily results</p>
-                <p class="mt-1 text-sm text-slate-500">
-                  On larger screens two cards fit side by side; mobile uses horizontal scroll.
-                </p>
-              </div>
             </div>
-          </article>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Ranks & streaks</p>
+          </div>
 
-          <article class="shrink-0 basis-[88%] snap-center sm:basis-[68%] lg:basis-[46%]">
-            <div class="overflow-hidden rounded-[1rem] border border-white/80 bg-white/80 shadow-soft">
+          <div class="group">
+            <div
+              class="overflow-hidden rounded-[1.25rem] border border-white/80 bg-white/80 shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <div
-                class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-[#ecf8ee] via-white to-[#dff0e2]">
-                <div class="text-center">
-                  <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-600">
-                    Screenshot 03
-                  </p>
-                  <p class="mt-3 text-lg font-semibold text-ink">Daily challenge screen</p>
-                  <p class="mt-2 text-sm text-slate-500">Replace with your image</p>
+                class="flex aspect-[9/19.5] items-center justify-center bg-gradient-to-br from-[#ecf8ee] via-white to-[#dff0e2]">
+                <div class="text-center px-3">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600">03</p>
+                  <p class="mt-2 text-sm font-semibold text-ink">Daily Challenge</p>
+                  <p class="mt-1 text-xs text-slate-400">Replace with screenshot</p>
                 </div>
               </div>
-              <div class="px-5 py-4">
-                <p class="text-sm font-medium text-ink">Special event or objective view</p>
-                <p class="mt-1 text-sm text-slate-500">
-                  The color blocks are placeholders and can be replaced with final screenshots.
-                </p>
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Daily puzzles</p>
+          </div>
+
+          <div class="group">
+            <div
+              class="overflow-hidden rounded-[1.25rem] border border-white/80 bg-white/80 shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <div
+                class="flex aspect-[9/19.5] items-center justify-center bg-gradient-to-br from-[#f5eefa] via-white to-[#ebe0f5]">
+                <div class="text-center px-3">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-purple-600">04</p>
+                  <p class="mt-2 text-sm font-semibold text-ink">Word Hunt</p>
+                  <p class="mt-1 text-xs text-slate-400">Replace with screenshot</p>
+                </div>
               </div>
             </div>
-          </article>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Free play mode</p>
+          </div>
         </div>
       </section>
     </main>
@@ -340,23 +313,6 @@
     </footer>
   </div>
 
-  <script>
-    const track = document.querySelector("[data-carousel-track]");
-    const prevButton = document.querySelector("[data-carousel-prev]");
-    const nextButton = document.querySelector("[data-carousel-next]");
-
-    if (track && prevButton && nextButton) {
-      const scrollAmount = () => Math.min(track.clientWidth * 0.9, 560);
-
-      prevButton.addEventListener("click", () => {
-        track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
-      });
-
-      nextButton.addEventListener("click", () => {
-        track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
-      });
-    }
-  </script>
 </body>
 
 </html>
