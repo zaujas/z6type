@@ -4,10 +4,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>z6type | Slide Cafe</title>
+  <title>Slide Cafe - Relaxing Word Puzzle Game | z6type</title>
   <meta name="description"
-    content="A professional, minimalist, and responsive app landing page for Slide Cafe by z6type." />
+    content="Play Slide Cafe, a cozy word puzzle game with daily challenges, relaxing modes, and smooth word-sliding gameplay on iOS and Android." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://z6type.com/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="z6type" />
+  <meta property="og:title" content="Slide Cafe - Relaxing Word Puzzle Game | z6type" />
+  <meta property="og:description"
+    content="Play Slide Cafe, a cozy word puzzle game with daily challenges, relaxing modes, and smooth word-sliding gameplay on iOS and Android." />
+  <meta property="og:url" content="https://z6type.com/" />
+  <meta property="og:image" content="https://z6type.com/assets/optimized/slide-cafe-hero.jpg" />
+  <meta property="og:image:alt" content="Slide Cafe gameplay preview" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Slide Cafe - Relaxing Word Puzzle Game | z6type" />
+  <meta name="twitter:description"
+    content="Play Slide Cafe, a cozy word puzzle game with daily challenges, relaxing modes, and smooth word-sliding gameplay on iOS and Android." />
+  <meta name="twitter:image" content="https://z6type.com/assets/optimized/slide-cafe-hero.jpg" />
   <meta name="theme-color" content="#f8f4ec" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://z6type.com/#organization",
+          "name": "z6type",
+          "url": "https://z6type.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://z6type.com/z6type_branding_logo.svg"
+          },
+          "email": "info@z6type.com"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://z6type.com/#website",
+          "url": "https://z6type.com/",
+          "name": "z6type",
+          "publisher": {
+            "@id": "https://z6type.com/#organization"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://z6type.com/#webpage",
+          "url": "https://z6type.com/",
+          "name": "Slide Cafe - Relaxing Word Puzzle Game | z6type",
+          "description": "Play Slide Cafe, a cozy word puzzle game with daily challenges, relaxing modes, and smooth word-sliding gameplay on iOS and Android.",
+          "isPartOf": {
+            "@id": "https://z6type.com/#website"
+          },
+          "about": {
+            "@type": "VideoGame",
+            "name": "Slide Cafe",
+            "genre": [
+              "Word game",
+              "Puzzle game"
+            ],
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "iOS, Android"
+          }
+        }
+      ]
+    }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -90,10 +154,10 @@
             class="whitespace-nowrap rounded-full px-3 py-2 transition duration-300 hover:bg-white hover:text-ink sm:px-4">Features</a>
           <a href="#support"
             class="whitespace-nowrap rounded-full px-3 py-2 transition duration-300 hover:bg-white hover:text-ink sm:px-4">Support</a>
-          <a href="privacy.html#privacy-policy"
+          <a href="/privacy/"
             class="whitespace-nowrap rounded-full px-3 py-2 transition duration-300 hover:bg-white hover:text-ink sm:px-4">Privacy
             Policy</a>
-          <a href="privacy.html#terms-of-service"
+          <a href="/terms/"
             class="whitespace-nowrap rounded-full px-3 py-2 transition duration-300 hover:bg-white hover:text-ink sm:px-4">Terms</a>
         </nav>
       </div>
@@ -113,11 +177,13 @@
             </p>
 
             <div class="mt-8 flex flex-wrap items-center gap-5">
-              <a href="https://apps.apple.com" class="transition duration-300 hover:-translate-y-1 hover:opacity-90">
+              <a href="https://apps.apple.com" class="transition duration-300 hover:-translate-y-1 hover:opacity-90"
+                rel="noopener noreferrer">
                 <img src="app_store.svg" alt="Download on the App Store" class="h-11 w-auto" />
               </a>
 
-              <a href="https://play.google.com" class="transition duration-300 hover:-translate-y-1 hover:opacity-90">
+              <a href="https://play.google.com" class="transition duration-300 hover:-translate-y-1 hover:opacity-90"
+                rel="noopener noreferrer">
                 <img src="google_play.svg" alt="Get it on Google Play" class="h-11 w-auto" />
               </a>
             </div>
@@ -127,7 +193,8 @@
             <div
               class="absolute inset-0 -z-10 rounded-[0.875rem] bg-gradient-to-br from-white/50 via-white/20 to-caramel/15 blur-3xl"
               aria-hidden="true"></div>
-            <img src="slide_cafe.png" alt="Slide Cafe Game Preview"
+            <img src="assets/optimized/slide-cafe-hero.jpg" alt="Slide Cafe Game Preview" width="807" height="900"
+              fetchpriority="high"
               class="relative w-full rounded-[0.875rem] shadow-float transition duration-500 hover:scale-[1.02]" />
           </div>
         </div>
@@ -231,9 +298,9 @@
           <div class="group">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
-              <img src="screenshots/IMG_6878.PNG" alt="Slide Cafe home screen screenshot"
+              <img src="assets/optimized/ss-home.jpg" alt="Slide Cafe home screen screenshot" width="323" height="700"
                 class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
-                loading="lazy" />
+                loading="lazy" decoding="async" />
             </div>
             <p class="mt-3 text-center text-sm font-medium text-ink">Home screen</p>
           </div>
@@ -241,9 +308,10 @@
           <div class="group">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
-              <img src="screenshots/IMG_6879.PNG" alt="Slide Cafe mode selection screenshot"
+              <img src="assets/optimized/ss-mode-select.jpg" alt="Slide Cafe mode selection screenshot" width="323"
+                height="700"
                 class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
-                loading="lazy" />
+                loading="lazy" decoding="async" />
             </div>
             <p class="mt-3 text-center text-sm font-medium text-ink">Mode select</p>
           </div>
@@ -251,9 +319,9 @@
           <div class="group">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
-              <img src="screenshots/IMG_6880.PNG" alt="Slide Cafe clue puzzle screenshot"
+              <img src="assets/optimized/ss-relax.jpg" alt="Slide Cafe clue puzzle screenshot" width="323" height="700"
                 class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
-                loading="lazy" />
+                loading="lazy" decoding="async" />
             </div>
             <p class="mt-3 text-center text-sm font-medium text-ink">Relax puzzle</p>
           </div>
@@ -261,9 +329,10 @@
           <div class="group">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
-              <img src="screenshots/IMG_6881.PNG" alt="Slide Cafe word hunt screenshot"
+              <img src="assets/optimized/ss-word-hunt.jpg" alt="Slide Cafe word hunt screenshot" width="323"
+                height="700"
                 class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
-                loading="lazy" />
+                loading="lazy" decoding="async" />
             </div>
             <p class="mt-3 text-center text-sm font-medium text-ink">Word hunt</p>
           </div>
@@ -271,9 +340,10 @@
           <div class="group">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
-              <img src="screenshots/IMG_6882.PNG" alt="Slide Cafe word packs screenshot"
+              <img src="assets/optimized/ss-word-packs.jpg" alt="Slide Cafe word packs screenshot" width="323"
+                height="700"
                 class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
-                loading="lazy" />
+                loading="lazy" decoding="async" />
             </div>
             <p class="mt-3 text-center text-sm font-medium text-ink">Word packs</p>
           </div>
@@ -292,10 +362,10 @@
         </div>
 
         <div class="flex flex-wrap items-center gap-3">
-          <a href="privacy.html#privacy-policy"
+          <a href="/privacy/"
             class="rounded-full border border-slate-200 bg-white px-4 py-2 text-slate-600 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md">Privacy
             Policy</a>
-          <a href="privacy.html#terms-of-service"
+          <a href="/terms/"
             class="rounded-full border border-slate-200 bg-white px-4 py-2 text-slate-600 shadow-sm transition duration-300 hover:-translate-y-1 hover:text-ink hover:shadow-md">Terms
             of Service</a>
         </div>
