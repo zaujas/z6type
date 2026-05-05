@@ -380,7 +380,7 @@
 
   <!-- Lightbox Modal -->
   <div id="lightbox"
-    class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 opacity-0 pointer-events-none transition-all duration-300 backdrop-blur-sm">
+    class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 opacity-0 hidden transition-all duration-300 backdrop-blur-sm">
     <!-- Close Button -->
     <button onclick="closeLightbox()"
       class="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/50 hover:text-white transition-colors p-2 z-50 group"
@@ -431,9 +431,10 @@
       currentImageIndex = images.indexOf(src);
       updateLightboxImage();
       const lightbox = document.getElementById('lightbox');
-      lightbox.classList.remove('opacity-0', 'pointer-events-none');
+      lightbox.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
       setTimeout(() => {
+        lightbox.classList.remove('opacity-0');
         document.getElementById('lightbox-img').classList.remove('scale-95');
       }, 10);
     }
@@ -459,8 +460,11 @@
       const lightbox = document.getElementById('lightbox');
       const img = document.getElementById('lightbox-img');
       img.classList.add('scale-95');
-      lightbox.classList.add('opacity-0', 'pointer-events-none');
+      lightbox.classList.add('opacity-0');
       document.body.style.overflow = '';
+      setTimeout(() => {
+        lightbox.classList.add('hidden');
+      }, 300);
     }
 
     document.addEventListener('keydown', (e) => {
