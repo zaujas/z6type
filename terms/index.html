@@ -129,6 +129,9 @@
           aria-label="Legal menu">
           <a href="/"
             class="whitespace-nowrap rounded-full px-3 py-2 transition duration-300 hover:bg-white hover:text-ink sm:px-4">Home</a>
+          <a href="/press/"
+            class="whitespace-nowrap rounded-full px-3 py-2 transition duration-300 hover:bg-white hover:text-ink sm:px-4">Press
+            Kit</a>
           <a href="/privacy/"
             class="whitespace-nowrap rounded-full px-3 py-2 transition duration-300 hover:bg-white hover:text-ink sm:px-4">Privacy
             Policy</a>
@@ -161,7 +164,7 @@
             </div>
             <div class="rounded-2xl bg-white px-4 py-2 text-xs font-medium text-slate-500">
               <p>Effective Date: April 23, 2026</p>
-              <p class="mt-1">Last Updated: April 23, 2026</p>
+              <p class="mt-1">Last Updated: July 20, 2026</p>
             </div>
           </div>
 
@@ -222,14 +225,15 @@
 
             <div>
               <h3 class="font-semibold text-ink">3. Restrictions</h3>
+              <p class="mt-2">You may not:</p>
               <ol class="mt-2 list-decimal space-y-2 pl-5">
-                <li>Do not copy, modify, translate, or create derivative works except where non-waivable law allows it.</li>
-                <li>Do not reverse engineer, decompile, or disassemble the App except where law expressly permits it.</li>
-                <li>Do not remove trademarks, notices, or attributions.</li>
-                <li>Do not rent, lease, sell, sublicense, or commercially exploit the App.</li>
-                <li>Do not use bots, scripts, macros, memory editors, or unofficial clients with the App.</li>
-                <li>Do not cheat, exploit bugs, or circumvent technical protections or purchase verification.</li>
-                <li>Do not interfere with the App, third-party services, or applicable laws and platform policies.</li>
+                <li>Copy, modify, translate, or create derivative works except where non-waivable law allows it.</li>
+                <li>Reverse engineer, decompile, or disassemble the App except where law expressly permits it.</li>
+                <li>Remove trademarks, notices, or attributions.</li>
+                <li>Rent, lease, sell, sublicense, or commercially exploit the App.</li>
+                <li>Use bots, scripts, macros, memory editors, or unofficial clients with the App.</li>
+                <li>Cheat, exploit bugs, or circumvent technical protections or purchase verification.</li>
+                <li>Interfere with the App, third-party services, or applicable laws and platform policies.</li>
               </ol>
             </div>
 
@@ -245,24 +249,86 @@
             <div>
               <h3 class="font-semibold text-ink">5. In-App Purchases and Virtual Items</h3>
               <p class="mt-2">
-                The App may offer Premium, Ad-Free, hint packs, and other virtual items.
-                These purchases are processed exclusively by Apple App Store or Google Play.
+                The App may offer the non-consumable <strong>Slide Cafe Pro</strong>
+                product, consumable diamond packs, and other virtual items. The available
+                catalog may change. Payments are processed exclusively by Apple App Store
+                or Google Play, while RevenueCat is used to retrieve product information,
+                validate transactions, manage entitlements, and restore eligible
+                purchases. A pseudonymous Supabase user ID may be used as the RevenueCat
+                App User ID so the App and our backend can verify the correct entitlement
+                without collecting an Apple or Google social-login account.
               </p>
-              <ul class="mt-2 list-disc space-y-2 pl-5">
-                <li>Virtual items are licensed, not sold, have no cash value, and are non-transferable.</li>
-                <li>Non-consumables may be restorable on the same Apple ID or Google account.</li>
-                <li>Refunds must be requested through the platform that processed the purchase.</li>
-                <li>Where subscriptions are offered, cancellation and renewal rules are governed by the platform and local law.</li>
-              </ul>
+
+              <div class="mt-4">
+                <h4 class="font-semibold text-ink">5.1 Nature of virtual items</h4>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>Virtual items are licensed, not sold.</li>
+                  <li>Virtual items have no cash value and are non-transferable.</li>
+                  <li>Refunds must be requested through the platform that processed the purchase.</li>
+                  <li>
+                    A refund, chargeback, cancellation, or revoked transaction may cause
+                    the associated entitlement or virtual item to be removed where
+                    permitted by law and platform rules.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-4">
+                <h4 class="font-semibold text-ink">5.2 Restore behavior</h4>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>
+                    Slide Cafe Pro and other eligible non-consumables may be restored
+                    through the App's restore flow when the applicable store and
+                    RevenueCat confirm the entitlement.
+                  </li>
+                  <li>
+                    Consumable purchases, including diamond packs, are not normally
+                    restored by Apple App Store or Google Play after they have been
+                    delivered. A remaining balance may reappear through a supported cloud
+                    save or platform backup, but recovery is not guaranteed.
+                  </li>
+                  <li>Consumed virtual currency, hints, rewards, or other consumable content is not restored.</li>
+                  <li>
+                    Store-account changes, platform limitations, network availability,
+                    fraud checks, or incomplete transaction history may affect
+                    restoration. Contact support if an eligible purchase cannot be
+                    restored.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-4">
+                <h4 class="font-semibold text-ink">5.3 Subscriptions</h4>
+                <p class="mt-2">
+                  The current catalog does not include an auto-renewing subscription. If
+                  subscriptions are offered in a future version, cancellation, renewal,
+                  pricing, and billing rules will be shown in the App and/or store
+                  purchase sheet and will be governed by the applicable store and local
+                  law.
+                </p>
+              </div>
+
+              <div class="mt-4">
+                <h4 class="font-semibold text-ink">5.4 Purchase verification</h4>
+                <p class="mt-2">
+                  The App may verify entitlements through the RevenueCat SDK and through
+                  an authenticated Supabase backend function that queries RevenueCat. A
+                  locally cached entitlement may be used temporarily when the network or
+                  verification service is unavailable. You may not manipulate receipts,
+                  user identifiers, local storage, network traffic, or other technical
+                  measures to obtain or retain an entitlement that has not been validly
+                  purchased.
+                </p>
+              </div>
             </div>
 
             <div>
               <h3 class="font-semibold text-ink">6. Advertising</h3>
               <p class="mt-2">
-                The App is partially funded by advertising served through Google AdMob and
-                mediated networks. Users with Ad-Free or Premium entitlements do not see
-                standard banners or interstitials, while rewarded ads remain optional if
-                offered.
+                The App may be funded in part by advertising served through Google AdMob
+                and its advertising partners. Users with Slide Cafe Pro or another
+                applicable ad-free entitlement do not see standard interstitial
+                advertising, while rewarded ads remain optional if offered.
               </p>
               <p class="mt-4">
                 Choices regarding personalized advertising are described in the
@@ -274,18 +340,29 @@
             <div>
               <h3 class="font-semibold text-ink">7. Updates, Changes, and Discontinuation</h3>
               <p class="mt-2">
-                We may release patches, updates, or new versions of the App and may change,
-                suspend, or discontinue features or virtual items. Where required by law and
-                feasible, notice will be provided for material permanent discontinuation.
+                We may release patches, updates, or new versions of the App and may
+                change, suspend, or discontinue features, online services, or virtual
+                items. Online features such as anonymous authentication, leaderboards,
+                leagues, cloud save, analytics, advertising, and purchase verification
+                require third-party services and an internet connection. Where required
+                by law and feasible, notice will be provided for material permanent
+                discontinuation.
               </p>
             </div>
 
             <div>
               <h3 class="font-semibold text-ink">8. Third-Party Services</h3>
               <p class="mt-2">
-                The App integrates third-party services including Firebase Analytics, Google
-                AdMob, Apple App Store, Google Play Billing, and Expo / EAS. Their use is
-                governed by their own terms and privacy policies.
+                The App integrates third-party services including Supabase for
+                pseudonymous authentication, database, cloud save, leaderboards, and
+                backend functions; RevenueCat for purchase validation and entitlements;
+                Firebase Analytics and Crashlytics for analytics and diagnostics; Google
+                AdMob for advertising; Apple App Store and Google Play Billing for
+                payments; and Expo / EAS for build and update infrastructure. Their use
+                is governed by their own terms and privacy policies. Additional details
+                are provided in our
+                <a class="font-medium text-ink underline decoration-caramel/70"
+                  href="/privacy/">Privacy Policy</a>.
               </p>
             </div>
 
@@ -321,14 +398,20 @@
               <h3 class="font-semibold text-ink">12. Termination</h3>
               <p class="mt-2">
                 These Terms remain in effect while you use the App. You may terminate them
-                by uninstalling the App and ceasing use. We may suspend or terminate your
-                license if you breach these Terms, if continued access creates legal or
-                security risk, or if required by law or platform policy.
+                by uninstalling the App and ceasing use. Uninstalling the App does not
+                automatically delete pseudonymous backend, leaderboard, cloud-save,
+                RevenueCat, analytics, or store transaction records; deletion requests are
+                handled as described in the
+                <a class="font-medium text-ink underline decoration-caramel/70"
+                  href="/privacy/">Privacy Policy</a>.
+                We may suspend or terminate your license or access to online features if
+                you breach these Terms, if continued access creates legal or security
+                risk, or if required by law or platform policy.
               </p>
             </div>
 
             <div>
-              <h3 class="font-semibold text-ink">13. Contact &amp; Support</h3>
+              <h3 class="font-semibold text-ink">13. Contact and Support</h3>
               <ul class="mt-2 list-disc space-y-2 pl-5">
                 <li>
                   <strong>Email:</strong>
