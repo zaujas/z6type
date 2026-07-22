@@ -280,20 +280,42 @@
       </section>
 
       <section class="mx-auto max-w-6xl px-5 pb-8 sm:px-6 lg:px-8 lg:pb-12">
-        <div class="mb-10 max-w-2xl">
-          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
-            IN-GAME SCREENS
-          </p>
-          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            A closer look at Slide Cafe
-          </h2>
-          <p class="mt-4 text-base leading-7 text-slate-600">
-            See the smooth word-sliding gameplay, elegant interface, and puzzle modes that make every session feel fresh.
-          </p>
+        <div class="mb-10 flex items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
+              IN-GAME SCREENS
+            </p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              A closer look at Slide Cafe
+            </h2>
+            <p class="mt-4 text-base leading-7 text-slate-600">
+              See the smooth word-sliding gameplay, elegant interface, and puzzle modes that make every session feel fresh.
+              Swipe or scroll to explore.
+            </p>
+          </div>
+
+          <div class="hidden shrink-0 gap-2 sm:flex" aria-label="Screenshot carousel controls">
+            <button type="button" onclick="scrollScreens(-1)" aria-label="Scroll screenshots left"
+              aria-controls="screenshot-carousel"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft focus:outline-none focus:ring-2 focus:ring-caramel focus:ring-offset-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" onclick="scrollScreens(1)" aria-label="Scroll screenshots right"
+              aria-controls="screenshot-carousel"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft focus:outline-none focus:ring-2 focus:ring-caramel focus:ring-offset-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:gap-8">
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss_splash.PNG')">
+        <div id="screenshot-carousel"
+          class="carousel-track flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-6 sm:gap-6 lg:gap-8"
+          tabindex="0" aria-label="Slide Cafe screenshots">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss_splash.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss_splash.PNG" alt="Slide Cafe splash screen screenshot" width="323" height="700"
@@ -303,7 +325,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Splash screen</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-home.PNG')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-home.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-home.PNG" alt="Slide Cafe home screen screenshot" width="323" height="700"
@@ -313,7 +335,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Home screen</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-modes.PNG')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-modes.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-modes.PNG" alt="Slide Cafe game modes screenshot" width="323" height="700"
@@ -323,7 +345,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Game modes</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-daily_challenge.PNG')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-daily_challenge.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-daily_challenge.PNG" alt="Slide Cafe daily challenge screenshot" width="323" height="700"
@@ -333,7 +355,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Daily Challenge</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-relax.PNG')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-relax.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-relax.PNG" alt="Slide Cafe relax puzzle screenshot" width="323" height="700"
@@ -343,7 +365,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Relax puzzle</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-word_hunt.PNG')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-word_hunt.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-word_hunt.PNG" alt="Slide Cafe word hunt screenshot" width="323" height="700"
@@ -353,7 +375,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Word hunt</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-packs.PNG')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-packs.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-packs.PNG" alt="Slide Cafe word packs screenshot" width="323" height="700"
@@ -363,7 +385,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Word packs</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-themes.PNG')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-themes.PNG')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-themes.PNG" alt="Slide Cafe themes screenshot" width="323" height="700"
@@ -373,7 +395,7 @@
             <p class="mt-3 text-center text-sm font-medium text-ink">Themes</p>
           </div>
 
-          <div class="group cursor-pointer" onclick="openLightbox('assets/optimized/ss-calendar.png')">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]" onclick="openLightbox('assets/optimized/ss-calendar.png')">
             <div
               class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
               <img src="assets/optimized/ss-calendar.png" alt="Slide Cafe calendar screenshot" width="323" height="700"
@@ -462,6 +484,15 @@
       'assets/optimized/ss-calendar.png'
     ];
     let currentImageIndex = 0;
+
+    function scrollScreens(direction) {
+      const carousel = document.getElementById('screenshot-carousel');
+      const firstCard = carousel.firstElementChild;
+      const gap = parseFloat(getComputedStyle(carousel).columnGap) || 0;
+      const distance = firstCard.getBoundingClientRect().width + gap;
+
+      carousel.scrollBy({ left: direction * distance, behavior: 'smooth' });
+    }
 
     function openLightbox(src) {
       currentImageIndex = images.indexOf(src);
