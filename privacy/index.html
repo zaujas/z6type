@@ -183,7 +183,7 @@
             </div>
             <div class="rounded-2xl bg-latte px-4 py-2 text-xs font-medium text-slate-500">
               <p>Effective Date: April 23, 2026</p>
-              <p class="mt-1">Last Updated: July 25, 2026</p>
+              <p class="mt-1">Last Updated: July 26, 2026</p>
             </div>
           </div>
 
@@ -299,7 +299,13 @@
                   <li>Game state, unfinished puzzle data, completed levels, scores, hints used, and move counts</li>
                   <li>Settings such as language, sound, haptics, tutorial state, and onboarding flags</li>
                   <li>Virtual-currency and inventory balances</li>
-                  <li>A cached copy of purchase entitlements for offline access</li>
+                  <li>
+                    A locally cached copy of purchase-entitlement status so previously
+                    validated purchase benefits can remain recognized when the network
+                    or verification service is temporarily unavailable. This cache does
+                    not control or restrict offline gameplay, which is available
+                    regardless of Slide Cafe Pro status.
+                  </li>
                   <li>Locally generated session identifiers and player seed values</li>
                   <li>Authentication session material used to resume the App's pseudonymous Supabase user</li>
                 </ul>
