@@ -115,6 +115,14 @@
       backdrop-filter: blur(18px);
     }
 
+    .carousel-track {
+      scrollbar-width: none;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -213,8 +221,7 @@
       <section id="about" class="mx-auto max-w-6xl scroll-mt-24 px-5 pb-6 sm:px-6 lg:px-8">
         <article
           class="glass-card rounded-[1.5rem] border border-white/80 p-7 shadow-soft transition duration-300 hover:shadow-float sm:p-9">
-          <div class="grid items-center gap-10 lg:grid-cols-[minmax(260px,340px)_minmax(0,1fr)] lg:gap-12">
-            <div>
+          <div class="max-w-4xl">
               <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">The Game</p>
               <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 A fresh way to play with words
@@ -284,19 +291,155 @@
                   Unlockable cafe themes
                 </li>
               </ul>
-            </div>
-
-            <figure class="relative isolate mx-auto w-full max-w-[320px] lg:order-first">
-              <div
-                class="pointer-events-none absolute -inset-5 -z-10 rounded-[2.5rem] bg-gradient-to-br from-sky-300/30 via-white/60 to-rose-300/30 blur-xl"
-                aria-hidden="true"></div>
-              <img src="/assets/optimized/ss-daily_challenge.PNG"
-                alt="Daily Challenge mode in Slide Cafe showing letter columns and the remaining move count"
-                width="1170" height="2532" loading="lazy" decoding="async"
-                class="relative mx-auto max-h-[500px] w-auto rounded-[1.5rem] object-contain shadow-2xl transition duration-500 hover:-translate-y-1 hover:rotate-0 lg:-rotate-2" />
-            </figure>
           </div>
         </article>
+      </section>
+
+      <!-- Screenshots -->
+      <section id="screenshots" class="mx-auto max-w-6xl scroll-mt-24 px-5 py-6 sm:px-6 lg:px-8">
+        <div class="mb-10 flex items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cacao">
+              In-Game Screens
+            </p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              A closer look at Slide Cafe
+            </h2>
+            <p class="mt-4 text-base leading-7 text-slate-600">
+              Explore the word-sliding gameplay, interface, and puzzle modes. Select any
+              image to view it at full size.
+            </p>
+          </div>
+
+          <div class="hidden shrink-0 gap-2 sm:flex" aria-label="Screenshot carousel controls">
+            <button type="button" onclick="scrollScreens(-1)" aria-label="Scroll screenshots left"
+              aria-controls="screenshot-carousel"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft focus:outline-none focus:ring-2 focus:ring-caramel focus:ring-offset-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" onclick="scrollScreens(1)" aria-label="Scroll screenshots right"
+              aria-controls="screenshot-carousel"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white text-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft focus:outline-none focus:ring-2 focus:ring-caramel focus:ring-offset-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="screenshot-carousel"
+          class="carousel-track flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-6 sm:gap-6 lg:gap-8"
+          tabindex="0" aria-label="Slide Cafe screenshots">
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss_splash.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss_splash.PNG" alt="Slide Cafe splash screen screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Splash screen</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-home.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-home.PNG" alt="Slide Cafe home screen screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Home screen</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-modes.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-modes.PNG" alt="Slide Cafe game modes screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Game modes</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-daily_challenge.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-daily_challenge.PNG" alt="Slide Cafe daily challenge screenshot"
+                width="323" height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Daily Challenge</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-relax.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-relax.PNG" alt="Slide Cafe relax puzzle screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Relax puzzle</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-word_hunt.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-word_hunt.PNG" alt="Slide Cafe word hunt screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Word hunt</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-packs.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-packs.PNG" alt="Slide Cafe word packs screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Word packs</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-themes.PNG')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-themes.PNG" alt="Slide Cafe themes screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Themes</p>
+          </div>
+
+          <div class="group w-[68vw] max-w-[250px] shrink-0 snap-start cursor-pointer sm:w-[230px] lg:w-[250px]"
+            onclick="openLightbox('/assets/optimized/ss-calendar.png')">
+            <div
+              class="aspect-[9/19.5] overflow-hidden rounded-[1.25rem] shadow-soft transition duration-300 group-hover:-translate-y-1 group-hover:shadow-float">
+              <img src="/assets/optimized/ss-calendar.png" alt="Slide Cafe calendar screenshot" width="323"
+                height="700"
+                class="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.04]"
+                loading="lazy" decoding="async" />
+            </div>
+            <p class="mt-3 text-center text-sm font-medium text-ink">Calendar</p>
+          </div>
+        </div>
       </section>
 
       <!-- Copy-ready descriptions -->
@@ -507,7 +650,114 @@
     </footer>
   </div>
 
+  <!-- Screenshot lightbox -->
+  <div id="lightbox"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-950/90 opacity-0 backdrop-blur-sm transition-all duration-300">
+    <button type="button" onclick="closeLightbox()"
+      class="absolute right-4 top-4 z-50 p-2 text-white/50 transition-colors hover:text-white sm:right-6 sm:top-6"
+      aria-label="Close screenshot">
+      <svg viewBox="0 0 24 24" class="h-10 w-10 sm:h-12 sm:w-12" fill="none" stroke="currentColor"
+        aria-hidden="true">
+        <path d="M6 18 18 6M6 6l12 12" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <button type="button" onclick="prevImage(event)"
+      class="absolute left-2 top-1/2 z-50 -translate-y-1/2 p-4 text-white/40 transition hover:text-white sm:left-6"
+      aria-label="Previous screenshot">
+      <svg viewBox="0 0 24 24" class="h-10 w-10 sm:h-14 sm:w-14" fill="none" stroke="currentColor"
+        aria-hidden="true">
+        <path d="m15 19-7-7 7-7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <button type="button" onclick="nextImage(event)"
+      class="absolute right-2 top-1/2 z-50 -translate-y-1/2 p-4 text-white/40 transition hover:text-white sm:right-6"
+      aria-label="Next screenshot">
+      <svg viewBox="0 0 24 24" class="h-10 w-10 sm:h-14 sm:w-14" fill="none" stroke="currentColor"
+        aria-hidden="true">
+        <path d="m9 5 7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <div
+      class="pointer-events-none relative flex h-full max-h-[96vh] w-auto items-center justify-center overflow-hidden rounded-2xl shadow-float">
+      <img id="lightbox-img" src="" alt="Full size screenshot"
+        class="pointer-events-auto block h-full w-auto scale-95 object-contain transition-transform duration-500" />
+    </div>
+  </div>
+
   <script>
+    const images = [
+      "/assets/optimized/ss_splash.PNG",
+      "/assets/optimized/ss-home.PNG",
+      "/assets/optimized/ss-modes.PNG",
+      "/assets/optimized/ss-daily_challenge.PNG",
+      "/assets/optimized/ss-relax.PNG",
+      "/assets/optimized/ss-word_hunt.PNG",
+      "/assets/optimized/ss-packs.PNG",
+      "/assets/optimized/ss-themes.PNG",
+      "/assets/optimized/ss-calendar.png",
+    ];
+    let currentImageIndex = 0;
+
+    function scrollScreens(direction) {
+      const carousel = document.getElementById("screenshot-carousel");
+      const firstCard = carousel.firstElementChild;
+      const gap = parseFloat(getComputedStyle(carousel).columnGap) || 0;
+      const distance = firstCard.getBoundingClientRect().width + gap;
+      carousel.scrollBy({ left: direction * distance, behavior: "smooth" });
+    }
+
+    function openLightbox(src) {
+      currentImageIndex = images.indexOf(src);
+      updateLightboxImage();
+      const lightbox = document.getElementById("lightbox");
+      lightbox.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+      setTimeout(() => {
+        lightbox.classList.remove("opacity-0");
+        document.getElementById("lightbox-img").classList.remove("scale-95");
+      }, 10);
+    }
+
+    function updateLightboxImage() {
+      document.getElementById("lightbox-img").src = images[currentImageIndex];
+    }
+
+    function nextImage(event) {
+      if (event) event.stopPropagation();
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      updateLightboxImage();
+    }
+
+    function prevImage(event) {
+      if (event) event.stopPropagation();
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      updateLightboxImage();
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById("lightbox");
+      const image = document.getElementById("lightbox-img");
+      image.classList.add("scale-95");
+      lightbox.classList.add("opacity-0");
+      document.body.style.overflow = "";
+      setTimeout(() => lightbox.classList.add("hidden"), 300);
+    }
+
+    document.addEventListener("keydown", (event) => {
+      const lightbox = document.getElementById("lightbox");
+      if (lightbox.classList.contains("opacity-0")) return;
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowRight") nextImage();
+      if (event.key === "ArrowLeft") prevImage();
+    });
+
+    document.getElementById("lightbox").addEventListener("click", (event) => {
+      if (event.target.id === "lightbox") closeLightbox();
+    });
+
     document.querySelectorAll("[data-copy]").forEach((button) => {
       button.addEventListener("click", async () => {
         const source = document.getElementById(button.dataset.copy);
